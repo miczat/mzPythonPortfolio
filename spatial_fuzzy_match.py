@@ -2,14 +2,14 @@
 # name:        spatial_fuzzy_match.py
 #
 # description: Helps find duplicate records in a database that are similar if not identical
-#              Designed to be used to find duplicates within one table (the 'left' table). Maybe extended to use
-#              two tables in the future ('left' and 'right') tables.
+#              Designed to be used to find duplicates within one table (the 'left' table). It may be extended to use
+#              two tables in the future ('left' and 'right' tables).
 #
 #              This program compares strings within the search distance and calculates a set of similarity
 #              metrics that can be filtered.
 #
-#              Input data is not case sensitive, all records are lower-cased at the time of comparison
-#              Records with Null geometry are still considered, they are just mapped to (0,0)
+#              Input data is not case-sensitive. All records are lower-cased at the time of comparison
+#              Records with Null geometry are still considered; they are just mapped to (0,0)
 #
 #              FuzzyWuzzy Levenshtein distance metrics:
 #
@@ -41,7 +41,7 @@
 # param:       left_fc_name        Left FC
 # param:       left_fc_text_field  Field containing text to compare
 # param:       left_fc_pk          The PK in the left FC
-# param:       search_distance     the distance that defines the neighbourhood search
+# param:       search_distance     the distance that defines the neighborhood search
 # param:       report_folder       the folder to write the output CSV to
 # param:       report_name         the name of the CSV file with the pairs of close matches
 #
