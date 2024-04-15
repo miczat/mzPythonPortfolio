@@ -61,7 +61,7 @@ log = logging.getLogger()
 # -----------------------------------------
 # run config
 # -----------------------------------------
-log_name = r"progam name here"
+log_name = r"program name here"
 log_folder = r"."
 
 
