@@ -20,3 +20,6 @@ My Python Portfolio - examples of my work
   * Issues and limitations 
   * My personal naming conventions for files and parts of file names
   
+* **spatial_fuzzy_match.py**
+
+This script was used to deduplicate businesses with the same or similar names within a threshold neighborhood distance. ArcPy is used to select features within the neighborhood, and the Python library fuzzywuzzy was used to calculate name similarity using the Levenshtein Distance.  Database queries were used later to find and flag potential duplicates.
